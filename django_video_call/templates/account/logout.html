@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-lg">
+            <div class="card-header bg-primary text-white text-center">
+                <h3><i class="fas fa-sign-out-alt"></i> Logged Out</h3>
+            </div>
+            <div class="card-body text-center">
+                <p class="lead">You have been successfully logged out.</p>
+                <p>Thank you for using our video chat application!</p>
+                <hr>
+                <a href="{% url 'login' %}" class="btn btn-primary">
+                    <i class="fas fa-sign-in-alt"></i> Login Again
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
